@@ -2,7 +2,7 @@
 ### Description
 This application is a daily planner where you can save your daily plans and clear out the old ones. 
 ### Live Site
-[Bootcamp Homework Four](https://acm4219.github.io/Bootcamp-Daily-Planner-Project/02-Homework/)
+[Bootcamp Homework Four](https://acm4219.github.io/Bootcamp-Daily-Planner-Project/02-Homework/Develop)
 ### Usage
 You use the application by entering in your plans for the day in the allotted slot of time and hit the save button to save it. It remains on the page until you clear the local storage and refresh for new slots to fill for your day. Originally it was going to have a timed system attached to it but unfortunately I wasn't able to get it working.
 
