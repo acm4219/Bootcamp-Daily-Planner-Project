@@ -31,77 +31,77 @@
     <div class="container" id='save-text'>
       <div class="input-group mb-3">
       <span class="input-group-text">08 A.M.</span>
-      <input type="text" class="form-control" class="row" data-timekey="8am-block" id="8am" aria-describedby="button-addon2">
+      <input type="text" class="form-control" class="row past present future" data-timekey="8am-block" id="8" aria-describedby="button-addon2">
       <div class="input-group-append">
         <button class="saveBtn" type="button" id="save1">Save</button>
       </div>
       <!--use parent method/sibling methods buttonpush.parent.sibling, select parent with the id-->
       <div class="input-group mb-3">
         <span class="input-group-text">09 A.M.</span>
-        <input type="text" class="form-control" class="row" data-timekey="9am-block" id="9am" aria-describedby="button-addon2">
+        <input type="text" class="form-control" class="row past present future" data-timekey="9am-block" id="9" aria-describedby="button-addon2">
       <div class="input-group-append">
         <button class="saveBtn" type="button" id="save2">Save</button>
       </div>
 
       <div class="input-group mb-3">
        <span class="input-group-text">10 A.M.</span>
-       <input type="text" class="form-control" class="row" data-timekey="10am-block" id="10am" aria-describedby="button-addon2">
+       <input type="text" class="form-control" class="row past present future" data-timekey="10am-block" id="10" aria-describedby="button-addon2">
        <div class="input-group-append">
          <button class="saveBtn" type="button" id="save3">Save</button>
        </div>
 
        <div class="input-group mb-3">
          <span class="input-group-text">11 A.M.</span>
-         <input type="text" class="form-control" class="row" data-timekey="11am-block" id="11am" aria-describedby="button-addon2">
+         <input type="text" class="form-control" class="row past present future" data-timekey="11am-block" id="11" aria-describedby="button-addon2">
          <div class="input-group-append"> 
             <button class="saveBtn" type="button" id="save4">Save</button>
            </div>
 
         <div class="input-group mb-3">
         <span class="input-group-text">12 P.M.</span>
-         <input type="text" class="form-control" class="row" data-timekey="12pm-block" id="12pm" aria-describedby="button-addon2">
+         <input type="text" class="form-control" class="row past present future" data-timekey="12pm-block" id="12" aria-describedby="button-addon2">
          <div class="input-group-append">
          <button class="saveBtn" type="button" id="save5">Save</button>
        </div>
 
        <div class="input-group mb-3">
         <span class="input-group-text">01 P.M.</span>
-         <input type="text" class="form-control" class="row" data-timekey="1pm-block" id="1pm" aria-describedby="button-addon2">
+         <input type="text" class="form-control" class="row past present future" data-timekey="1pm-block" id="13" aria-describedby="button-addon2">
          <div class="input-group-append">
          <button class="saveBtn" type="button" id="save6">Save</button>
        </div>
 
        <div class="input-group mb-3">
         <span class="input-group-text">02 P.M.</span>
-         <input type="text" class="form-control" class="row" id="2pm"data-timekey="2pm-block" aria-describedby="button-addon2">
+         <input type="text" class="form-control" class="row past present future" id="14"data-timekey="2pm-block" aria-describedby="button-addon2">
          <div class="input-group-append">
          <button class="saveBtn" type="button" id="save7">Save</button>
        </div>
 
        <div class="input-group mb-3">
         <span class="input-group-text">03 P.M.</span>
-         <input type="text" class="form-control" class="row" data-timekey="3pm-block" id="3pm" aria-describedby="button-addon2">
+         <input type="text" class="form-control" class="row past present future" data-timekey="3pm-block" id="15" aria-describedby="button-addon2">
          <div class="input-group-append">
          <button class="saveBtn" type="button" id="save8">Save</button>
        </div>
 
        <div class="input-group mb-3">
         <span class="input-group-text">04 P.M.</span>
-         <input type="text" class="form-control" class="row" data-timekey="4pm-block" id="4pm" aria-describedby="button-addon2">
+         <input type="text" class="form-control" class="row past present future" data-timekey="4pm-block" id="16" aria-describedby="button-addon2">
          <div class="input-group-append">
          <button class="saveBtn" type="button" id="save9">Save</button>
        </div>
 
        <div class="input-group mb-3">
         <span class="input-group-text">05 P.M.</span>
-         <input type="text" class="form-control" class="row" data-timekey="5pm-block" id="5pm" aria-describedby="button-addon2">
+         <input type="text" class="form-control" class="row past present future" data-timekey="5pm-block" id="17" aria-describedby="button-addon2">
          <div class="input-group-append">
          <button class="saveBtn" type="button" id="save10">Save</button>
        </div>
        
        <div class="input-group mb-3">
         <span class="input-group-text">06 P.M.</span>
-         <input type="text" class="form-control" class="row" data-timekey="6pm-block" id="6pm" aria-describedby="button-addon2">
+         <input type="text" class="form-control" class="row past present future" data-timekey="6pm-block" id="18" aria-describedby="button-addon2">
          <div class="input-group-append">
          <button class="saveBtn" type="button" id="save11">Save</button>
        </div>
@@ -116,25 +116,25 @@
 
         $(document).ready(function() {
          //set values here what I want it to do is to display the text per refresh
-          $('#8am').val(localStorage.getItem('8am-block'));
-          $('#9am').val(localStorage.getItem('9am-block'));
-          $('#10am').val(localStorage.getItem('10am-block'));
-          $('#11am').val(localStorage.getItem('11am-block'));
-          $('#12pm').val(localStorage.getItem('12pm-block'));
-          $('#1pm').val(localStorage.getItem('1pm-block'));
-          $('#2pm').val(localStorage.getItem('2pm-block'));
-          $('#3pm').val(localStorage.getItem('3pm-block'));
-          $('#4pm').val(localStorage.getItem('4pm-block'));
-          $('#5pm').val(localStorage.getItem('5pm-block'));
-          $('#6pm').val(localStorage.getItem('6pm-block'));
+          $('#8').val(localStorage.getItem('8am-block'));
+          $('#9').val(localStorage.getItem('9am-block'));
+          $('#10').val(localStorage.getItem('10am-block'));
+          $('#11').val(localStorage.getItem('11am-block'));
+          $('#12').val(localStorage.getItem('12pm-block'));
+          $('#13').val(localStorage.getItem('1pm-block'));
+          $('#14').val(localStorage.getItem('2pm-block'));
+          $('#15').val(localStorage.getItem('3pm-block'));
+          $('#16').val(localStorage.getItem('4pm-block'));
+          $('#17').val(localStorage.getItem('5pm-block'));
+          $('#18').val(localStorage.getItem('6pm-block'));
     
          var day = moment();
          $('.saveBtn').on('click', function(event){
-         event.preventDefault();
-         var inputEl = $(this).parent().siblings('.form-control')
-         console.log(inputEl);
-         localStorage.setItem(inputEl.attr("data-timekey") , inputEl. val()); 
-         
+           event.preventDefault();
+           var inputEl = $(this).parent().siblings('.form-control')
+           console.log(inputEl);
+           localStorage.setItem(inputEl.attr("data-timekey") , inputEl.val()); 
+                   
         });
         
         // look for value of that element when the page is reloaded  
@@ -144,7 +144,150 @@
 
         $('p.currentDay').append(day.format('dddd MMM Do YYYY'));
         console.log(day.toString());
-       })
+        
+        // if (moment().format("HH") > $(storeNine).attr("data-time"))
+        // 	$(storeNine).css("backgroundColor", "lightgray");
+        // else if (moment().format("HH") === $(storeNine).attr("data-time"))
+	      // $(storeNine).css("backgroundColor", "red");
+        // else if (moment().format("HH") < $(storeNine).attr("data-time"))
+        // $(storeNine).css("backgroundColor", "mediumseagreen");
+        //found off stack overflow https://stackoverflow.com/questions/59995703/trying-to-change-background-color-based-off-if-the-hour-is-in-the-past-current
+         var currentHour = parseInt(day.format('H'));
+          console.log(currentHour);
+
+        
+         // Compares row id to current hour and sets color accordingly
+        if (currentHour == $('#8')) {
+          $('#8').css("#row", "red")
+        } else if ((currentHour < $('#8')) && (currentHour > $('#8') - 1)) {
+          $('#8').css("#row", "lightgray")
+        } else if ((currentHour > $('#8')) && (currentHour < $('#8') + 1)) {
+          $('#8').css("#row", "green")
+        } else {
+          $('#8').css("#row", "white")
+        }
+       
+        if (currentHour == $('#9')) {
+          $('#9').css("#row", "red")
+        } else if ((currentHour < $('#9')) && (currentHour > $('#9') - 1)) {
+          $('#8').css("#row", "lightgray")
+        } else if ((currentHour > $('#9')) && (currentHour < $('#9') + 1)) {
+          $('#9').css("#row", "green")
+        } else {
+          $('#9').css("#row", "white")
+        }
+        
+        if (currentHour == $('#10')) {
+          $('#10').css("#row", "red")
+        } else if ((currentHour < $('#10')) && (currentHour > $('#10') - 1)) {
+          $('#10').css("#row", "lightgray")
+        } else if ((currentHour > $('#9')) && (currentHour < $('#10') + 1)) {
+          $('#10').css("#row", "green")
+        } else {
+          $('#10').css("#row", "white")
+        }
+
+        if (currentHour == $('#10')) {
+          $('#10').css("#row", "red")
+        } else if ((currentHour < $('#10')) && (currentHour > $('#10') - 1)) {
+          $('#10').css("#row", "lightgray")
+        } else if ((currentHour > $('#9')) && (currentHour < $('#10') + 1)) {
+          $('#10').css("#row", "green")
+        } else {
+          $('#10').css("#row", "white")
+        }
+
+        if (currentHour == $('#10')) {
+          $('#10').css("#row", "red")
+        } else if ((currentHour < $('#10')) && (currentHour > $('#10') - 1)) {
+          $('#10').css("#row", "lightgray")
+        } else if ((currentHour > $('#10')) && (currentHour < $('#10') + 1)) {
+          $('#10').css("#row", "green")
+        } else {
+          $('#10').css("#row", "white")
+        }
+
+        if (currentHour == $('#11')) {
+          $('#11').css("#row", "red")
+        } else if ((currentHour < $('#11')) && (currentHour > $('#11') - 1)) {
+          $('#11').css("#row", "lightgray")
+        } else if ((currentHour > $('#11')) && (currentHour < $('#11') + 1)) {
+          $('#11').css("#row", "green")
+        } else {
+          $('#11').css("#row", "white")
+        }
+
+        if (currentHour == $('#12')) {
+          $('#12').css("#row", "red")
+        } else if ((currentHour < $('#12')) && (currentHour > $('#12') - 1)) {
+          $('#12').css("#row", "lightgray")
+        } else if ((currentHour > $('#12')) && (currentHour < $('#12') + 1)) {
+          $('#12').css("#row", "green")
+        } else {
+          $('#12').css("#row", "white")
+        }
+
+        if (currentHour == $('#13')) {
+          $('#13').css("#row", "red")
+        } else if ((currentHour < $('#13')) && (currentHour > $('#13') - 1)) {
+          $('#13').css("#row", "lightgray")
+        } else if ((currentHour > $('#13')) && (currentHour < $('#13') + 1)) {
+          $('#13').css("#row", "green")
+        } else {
+          $('#13').css("#row", "white")
+        }
+
+        if (currentHour == $('#14')) {
+          $('#14').css("#row", "red")
+        } else if ((currentHour < $('#14')) && (currentHour > $('#14') - 1)) {
+          $('#14').css("#row", "lightgray")
+        } else if ((currentHour > $('#14')) && (currentHour < $('#14') + 1)) {
+          $('#14').css("#row", "green")
+        } else {
+          $('#14').css("#row", "white")
+        }
+
+        if (currentHour == $('#15')) {
+          $('#15').css("#row", "red")
+        } else if ((currentHour < $('#15')) && (currentHour > $('#15') - 1)) {
+          $('#15').css("#row", "lightgray")
+        } else if ((currentHour > $('#15')) && (currentHour < $('#15') + 1)) {
+          $('#15').css("#row", "green")
+        } else {
+          $('#15').css("#row", "white")
+        }
+
+        if (currentHour == $('#16')) {
+          $('#16').css("#row", "red")
+        } else if ((currentHour < $('#16')) && (currentHour > $('#16') - 1)) {
+          $('#16').css("#row", "lightgray")
+        } else if ((currentHour > $('#16')) && (currentHour < $('#16') + 1)) {
+          $('#16').css("#row", "green")
+        } else {
+          $('#16').css("#row", "white")
+        }
+
+        if (currentHour == $('#17')) {
+          $('#17').css("#row", "red")
+        } else if ((currentHour < $('#17')) && (currentHour > $('#17') - 1)) {
+          $('#17').css("#row", "lightgray")
+        } else if ((currentHour > $('#17')) && (currentHour < $('#17') + 1)) {
+          $('#17').css("#row", "green")
+        } else {
+          $('#17').css("#row", "white")
+        }
+
+        if (currentHour == $('#18')) {
+          $('#18').css("#row", "red")
+        } else if ((currentHour < $('#18')) && (currentHour > $('#18') - 3)) {
+          $('#18').css("#row", "lightgray")
+        } else if ((currentHour > $('#18')) && (currentHour < $('#18') + 1)) {
+          $('#18').css("#row", "green")
+        } else {
+          $('#18').css("#row", "white")
+        }
+      
+      })
        
     </script>
   </body>
